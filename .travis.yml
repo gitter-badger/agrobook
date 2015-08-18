@@ -1,5 +1,17 @@
 language: ruby
+cache: bundler
+ 
 rvm:
- - "2.0.0"
-script:
- - bundle exec rspec /spec
+  - 2.0.0
+ 
+script: 'bundle exec rake spec'
+ 
+bundler_args: --without development
+ 
+branches:
+  only:
+    - master
+ 
+notifications:
+  email:
+    - web.guru.serbia@gmail.com
