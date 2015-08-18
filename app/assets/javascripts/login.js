@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require login/bootstrap.min.js
+//= require login/custom
+//= require login/jquery.sticky
+//= require login/wow.min
+//= require login/owl.carousel.min
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree ./application
+//= require_tree ./login
