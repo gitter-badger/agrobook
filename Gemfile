@@ -57,3 +57,5 @@ gem 'cancancan'
 gem 'rolify'
 
 gem 'mailboxer'
+
+gem 'rollbar', '~> 2.1.2'
