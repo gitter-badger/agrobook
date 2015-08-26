@@ -13,4 +13,9 @@ RSpec.describe DashboardController, type: :controller do
     it { should respond_with(200) }
   end
 
+  describe "Get Index Template" do
+  	before { get :index }
+  	it { should render_template('index') } 
+  end
+
 end

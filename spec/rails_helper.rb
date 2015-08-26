@@ -8,6 +8,13 @@ require 'rspec/rails'
 require 'devise'
 require Rails.root.join("spec/support/macros/controller_macros.rb")
 require Rails.root.join("spec/support/devise.rb")
+if ENV['CI']
+  require "codeclimate-test-reporter"
+  CodeClimate::TestReporter.start
+else
+  require 'simplecov'
+  SimpleCov.start
+end
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
