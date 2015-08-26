@@ -45,7 +45,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'guard-rubocop'
   gem 'faker', '~> 1.5.0'
-  gem "codeclimate-test-reporter"
+  gem 'coveralls', require: false
   gem 'simplecov', :require => false
 end
 

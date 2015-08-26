@@ -19,10 +19,6 @@ bundler_args:
 branches:
   only:
     - master
-
-addons:
-  code_climate:
-    repo_token: adf08323...
  
 notifications:
   email:

@@ -9,8 +9,8 @@ require 'devise'
 require Rails.root.join("spec/support/macros/controller_macros.rb")
 require Rails.root.join("spec/support/devise.rb")
 if ENV['CI']
-  require "codeclimate-test-reporter"
-  CodeClimate::TestReporter.start
+  require 'coveralls'
+  Coveralls.wear!
 else
   require 'simplecov'
   SimpleCov.start
