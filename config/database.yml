@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: AgroBook_production
-  username: AgroBook
-  password: <%= ENV['AGROBOOK_DATABASE_PASSWORD'] %>
+  database: ddqdnabmn0vpvd
+  username: ixilaiyldifxdh
+  password: s8Hv77vjoZU2Ym6dTkXQCwVZoZ
