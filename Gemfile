@@ -49,6 +49,10 @@ group :development, :test do
   gem 'simplecov', :require => false
 end
 
+group :production do
+  gem 'rails_12factor' 
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -59,3 +63,5 @@ gem 'rolify'
 gem 'mailboxer'
 
 gem 'rollbar', '~> 2.1.2'
+
+ruby "2.0.0"

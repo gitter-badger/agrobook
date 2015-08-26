@@ -18,4 +18,3 @@
 //= require login/owl.carousel.min
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree ./login
