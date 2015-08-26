@@ -39,11 +39,12 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'rspec-rails'
-  gem 'guard-rspec', require: false
   gem 'shoulda-matchers'
+  gem 'guard-rspec', require: false
   gem 'factory_girl_rails'
   gem 'rubocop', require: false
   gem 'guard-rubocop'
+  gem 'faker', '~> 1.5.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

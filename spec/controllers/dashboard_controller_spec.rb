@@ -2,11 +2,15 @@ require 'rails_helper'
 
 RSpec.describe DashboardController, type: :controller do
 
-  describe "GET #index" do
-    it "returns http success" do
-      get :index
-      expect(response).to have_http_status(:success)
-    end
+  login_user
+
+  describe "Before Action Authenticate User" do
+    it { should use_before_action(:authenticate_user!) } 
+  end
+
+  describe "Get Dashboard Index" do
+    before { get :index }
+    it { should respond_with(200) }
   end
 
 end
