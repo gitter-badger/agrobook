@@ -3,14 +3,11 @@
 <head>
 
 <!-- /.website title -->
-<title>AgroBoo</title>
+<title>AgroBook</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <!-- CSS Files -->
 <%= stylesheet_link_tag    'login', media: 'all', 'data-turbolinks-track' => true %>
-
-<!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
 
 </head>
 
@@ -21,7 +18,7 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<div class="fullscreen landing parallax" style="background-image:url('images/bg.png');" data-img-width="2000" data-img-height="1333" data-diff="100">
+<div class="fullscreen landing parallax" style="background-image:url('/assets/bg.png');" data-img-width="2000" data-img-height="1333" data-diff="100">
 
 	<div class="overlay">
 		<div class="container">
@@ -29,8 +26,7 @@
 				<div class="col-md-7">
 
 					<!-- /.logo -->
-					<div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
-
+					<div class="logo wow fadeInDown"> <a href=""><%= image_tag("logo.png") %></a></div>
 					<!-- /.main title -->
 						<h1 class="wow fadeInLeft">
 						Beautiful High Converting Landing Page
@@ -76,7 +72,7 @@
 				  <span class="icon-bar"></span>
 				  <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand site-name" href="#top"><img src="images/logo.png" alt="logo"></a>
+				<a class="navbar-brand site-name" href="#top"><%= image_tag("logo.png") %></a>
 			  </div>
 
 			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
@@ -98,7 +94,7 @@
 
 		<!-- /.intro image -->
 			<div class="col-md-6 intro-pic wow slideInLeft">
-				<img src="images/prodaja-stoke.png" alt="image" class="img-responsive">
+			<%= image_tag("prodaja-stoke.png", class: "img-responsive") %>
 			</div>
 
 			<!-- /.intro content -->
@@ -130,7 +126,7 @@
 
 			<!-- /.feature image -->
 				<div class="feature-img">
-					<img src="images/karakteristike.png" alt="image" class="img-responsive wow fadeInLeft">
+					<%= image_tag("karakteristike.png", class: 'img-responsive wow fadeInLeft') %>
 				</div>
 			</div>
 
@@ -204,7 +200,7 @@
 
 <!-- /.download section -->
 <div id="download">
-	<div class="action fullscreen parallax" style="background-image:url('images/bg-footer.png');" data-img-width="2000" data-img-height="1333" data-diff="100">
+	<div class="action fullscreen parallax" style="background-image:url('/assets/bg-footer.png');" data-img-width="2000" data-img-height="1333" data-diff="100">
 		<div class="overlay">
 			<div class="container">
 				<div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
@@ -225,7 +221,7 @@
 
 <!-- /.contact section -->
 <div id="contact">
-	<div class="contact fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+	<div class="contact fullscreen parallax" style="background-image:url('/assets/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
 		<div class="overlay">
 			<div class="container">
 				<div class="row contact-row">
