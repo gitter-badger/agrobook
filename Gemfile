@@ -47,6 +47,10 @@ group :development, :test do
   gem 'faker', '~> 1.5.0'
   gem 'coveralls', require: false
   gem 'simplecov', :require => false
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'sextant'
+  gem 'rack-mini-profiler', require: false
 end
 
 group :production do
