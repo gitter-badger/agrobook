@@ -51,6 +51,7 @@ group :development, :test do
   gem "binding_of_caller"
   gem 'sextant'
   gem 'rack-mini-profiler', require: false
+  gem "erb2haml"
 end
 
 group :production do
@@ -69,5 +70,7 @@ gem 'mailboxer'
 gem 'rollbar', '~> 2.1.2'
 
 gem 'bootstrap-sass', '~> 3.3.5'
+
+gem 'haml'
 
 ruby "2.0.0"

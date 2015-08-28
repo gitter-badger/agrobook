@@ -1,0 +1,204 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    / /.website title
+    %title AgroBook
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}/
+    / CSS Files
+    = stylesheet_link_tag    'login', media: 'all', 'data-turbolinks-track' => true
+  %body{"data-spy" => "scroll", "data-target" => "#navbar-scroll"}
+    / /.preloader
+    #preloader
+    #top
+    / /.parallax full screen background image
+    .fullscreen.landing.parallax{"data-diff" => "100", "data-img-height" => "1333", "data-img-width" => "2000", :style => "background-image:url('/assets/bg.png');"}
+      .overlay
+        .container
+          .row
+            .col-md-7
+              / /.logo
+              .logo.wow.fadeInDown
+                %a{:href => ""}= image_tag("logo.png")
+              / /.main title
+              %h1.wow.fadeInLeft
+                Beautiful High Converting Landing Page
+              / /.header paragraph
+              .landing-text.wow.fadeInUp
+                %p Backyard is a modern and customizable landing page template designed to increase conversion of your product. Backyard is flexible to suit any kind of your business. Try now and join with our happy customers!
+              / /.header button
+              .head-btn.wow.fadeInLeft
+                %a.btn-primary{:href => "#feature"} Karakteristike
+                %a.btn-default{:href => "#download"} Registracija
+            / /.signup form
+            .col-md-5
+              .signup-header.wow.fadeInUp
+                %h3.form-title.text-center GET STARTED
+                = yield
+    / NAVIGATION
+    #menu
+      %nav.navbar-wrapper.navbar-default{:role => "navigation"}
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => ".navbar-backyard", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand.site-name{:href => "#top"}= image_tag("logo.png")
+          #navbar-scroll.collapse.navbar-collapse.navbar-backyard.navbar-right
+            %ul.nav.navbar-nav
+              %li
+                %a{:href => "#intro"} Agrobook
+              %li
+                %a{:href => "#feature"} Karakteristike
+              %li
+                %a{:href => "#download"} Registracija
+              %li
+                %a{:href => "#contact"} Kontakt
+    / /.intro section
+    #intro
+      .container
+        .row
+          / /.intro image
+          .col-md-6.intro-pic.wow.slideInLeft
+            = image_tag("prodaja-stoke.png", class: "img-responsive")
+          / /.intro content
+          .col-md-6.wow.slideInRight
+            %h2 Optimize performance through advanced targeting solutions
+            %p
+              Good marketing makes the company look smart.
+              %a{:href => "#"} Great marketing
+              makes the customer feel smart, - Joe Chernov. Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has, - Margaret Mead. The best way to predict the future is to create it, - Peter Drucker.
+            .btn-section
+              %a.btn-default{:href => "#feature"} Karakteristike
+    / /.feature section
+    #feature
+      .container
+        .row
+          .col-md-10.col-md-offset-1.col-sm-12.text-center.feature-title
+            / /.feature title
+            %h2 Recreate your ideas and gain more success
+            %p Increase your user loyalty by maintaining mutual communication and nurturing your online community.
+        .row.row-feat
+          .col-md-4.text-center
+            / /.feature image
+            .feature-img
+              = image_tag("karakteristike.png", class: 'img-responsive wow fadeInLeft')
+          .col-md-8
+            / /.feature 1
+            .col-sm-6.feat-list
+              %i.pe-7s-notebook.pe-5x.pe-va.wow.fadeInUp
+              .inner
+                %h4 Marketing Strategy
+                %p
+                  Good marketing makes the company look smart. Great marketing makes the customer feel smart.
+            / /.feature 2
+            .col-sm-6.feat-list
+              %i.pe-7s-cash.pe-5x.pe-va.wow.fadeInUp{"data-wow-delay" => "0.2s"}
+              .inner
+                %h4 App Monetization
+                %p Content builds relationships. Relationships are built on trust. Trust drives revenue. - Andrew Davis
+            / /.feature 3
+            .col-sm-6.feat-list
+              %i.pe-7s-cart.pe-5x.pe-va.wow.fadeInUp{"data-wow-delay" => "0.4s"}
+              .inner
+                %h4 Store Optimization
+                %p Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has.
+            / /.feature 4
+            .col-sm-6.feat-list
+              %i.pe-7s-users.pe-5x.pe-va.wow.fadeInUp{"data-wow-delay" => "0.6s"}
+              .inner
+                %h4 User Management
+                %p Instead of using technology to automate processes, think about using technology to enhance human interaction.
+    / /.feature 2 section
+    #feature-2
+      .container
+        .row
+          / /.feature content
+          .col-md-6.wow.fadeInLeft
+            %h2 Learn how to make your app marketing efficient
+            %p
+              Good marketing makes the company look smart.
+              %span.highlight Great marketing
+              makes the customer feel smart, - Joe Chernov. Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has, - Margaret Mead. The best way to predict the future is to create it, - Peter Drucker.
+            .btn-section
+              %a.btn-default{:href => "#download"} Registracija
+          / /.feature image
+          .col-md-6.feature-2-pic.wow.fadeInRight
+            %img.img-responsive{:alt => "macbook", :src => "images/feature2-image.jpg"}/
+    / /.download section
+    #download
+      .action.fullscreen.parallax{"data-diff" => "100", "data-img-height" => "1333", "data-img-width" => "2000", :style => "background-image:url('/assets/bg-footer.png');"}
+        .overlay
+          .container
+            .col-md-8.col-md-offset-2.col-sm-12.text-center
+              / /.download title
+              %h2.wow.fadeInRight Would like to know more?
+              %p.download-text.wow.fadeInLeft We'll research the market, identify the right target audience, analyze competitors and avoid users churn to increase retention. Download now for free and join with thousands happy clients.
+              / /.download button
+              .download-cta.wow.fadeInLeft
+                = link_to('Registracija', new_user_registration_path, class: "btn-secondary")
+    / /.contact section
+    #contact
+      .contact.fullscreen.parallax{"data-diff" => "100", "data-img-height" => "1334", "data-img-width" => "2000", :style => "background-image:url('/assets/bg.jpg');"}
+        .overlay
+          .container
+            .row.contact-row
+              / /.address and contact
+              .col-sm-5.contact-left.wow.fadeInUp
+                %h2
+                  %span.highlight Get
+                  in touch
+                %ul.ul-address
+                  %li
+                    %i.pe-7s-map-marker>
+                    1600 Amphitheatre Parkway, Mountain View
+                    California 55000
+                  %li
+                    %i.pe-7s-phone>
+                    +1 (123) 456-7890
+                    +2 (123) 456-7890
+                  %li
+                    %i.pe-7s-mail
+                    %a{:href => "mailto:info@yoursite.com"} info@yoursite.com
+                  %li
+                    %i.pe-7s-look
+                    %a{:href => "#"} www.yoursite.com
+              / /.contact form
+              .col-sm-7.contact-right
+                %form#contact-form.form-horizontal{:action => "contactengine.php", :method => "POST", :onsubmit => "alert('Thank you for your feedback!');"}
+                  .form-group
+                    %input#Name.form-control.wow.fadeInUp{:name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+                  .form-group
+                    %input#Email.form-control.wow.fadeInUp{:name => "Email", :placeholder => "Email", :required => "", :type => "text"}/
+                  .form-group
+                    %textarea#Message.form-control.input-message.wow.fadeInUp{:cols => "20", :name => "Message", :placeholder => "Message", :required => "", :rows => "20"}
+                  .form-group
+                    %input.btn.btn-success.wow.fadeInUp{:name => "submit", :type => "submit", :value => "Submit"}/
+    / /.footer
+    %footer#footer
+      .container
+        .col-sm-4.col-sm-offset-4
+          / /.social links
+          .social.text-center
+            %ul
+              %li
+                %a.wow.fadeInUp{:href => "https://twitter.com/"}
+                  %i.fa.fa-twitter
+              %li
+                %a.wow.fadeInUp{"data-wow-delay" => "0.2s", :href => "https://www.facebook.com/"}
+                  %i.fa.fa-facebook
+              %li
+                %a.wow.fadeInUp{"data-wow-delay" => "0.4s", :href => "https://plus.google.com/"}
+                  %i.fa.fa-google-plus
+              %li
+                %a.wow.fadeInUp{"data-wow-delay" => "0.6s", :href => "https://instagram.com/"}
+                  %i.fa.fa-instagram
+          .text-center.wow.fadeInUp{:style => "font-size: 14px;"} Copyright Agrobook 2015
+          %a.scrollToTop{:href => "#"}
+            %i.pe-7s-up-arrow.pe-va
+    / /.javascript files
+    = javascript_include_tag 'login', 'data-turbolinks-track' => true
+    :javascript
+      new WOW().init();
