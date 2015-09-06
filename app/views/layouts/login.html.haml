@@ -7,6 +7,7 @@
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}/
     / CSS Files
     = stylesheet_link_tag    'login', media: 'all', 'data-turbolinks-track' => true
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic", :rel => "stylesheet"}/
   %body{"data-spy" => "scroll", "data-target" => "#navbar-scroll"}
     / /.preloader
     #preloader
@@ -126,7 +127,7 @@
               %a.btn-default{:href => "#download"} Registracija
           / /.feature image
           .col-md-6.feature-2-pic.wow.fadeInRight
-            %img.img-responsive{:alt => "macbook", :src => "images/feature2-image.jpg"}/
+            = image_tag("features2-image.jpg", class: "img-responsive")
     / /.download section
     #download
       .action.fullscreen.parallax{"data-diff" => "100", "data-img-height" => "1333", "data-img-width" => "2000", :style => "background-image:url('/assets/bg-footer.png');"}
@@ -195,7 +196,7 @@
               %li
                 %a.wow.fadeInUp{"data-wow-delay" => "0.6s", :href => "https://instagram.com/"}
                   %i.fa.fa-instagram
-          .text-center.wow.fadeInUp{:style => "font-size: 14px;"} Copyright Agrobook 2015
+          .text-center.wow.fadeInUp{:style => "font-size: 14px;"} Copyright Agrobook = { Time.now.year}
           %a.scrollToTop{:href => "#"}
             %i.pe-7s-up-arrow.pe-va
     / /.javascript files

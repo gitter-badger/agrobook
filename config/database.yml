@@ -4,6 +4,7 @@ default: &default
   pool: 5
   timeout: 5000
   username: postgres
+  #password: 123456789
   host: postgres
   port: 5432
 

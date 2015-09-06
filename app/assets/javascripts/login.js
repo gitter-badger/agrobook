@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
+//= require login/bootstrap.min
 //= require login/custom
 //= require login/jquery.sticky
 //= require login/wow.min
