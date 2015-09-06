@@ -15,3 +15,11 @@ Rails.application.config.assets.precompile += %w( login.js )
 
 Rails.application.config.assets.precompile += %w( registration.css )
 Rails.application.config.assets.precompile += %w( registration.js )
+
+Rails.application.config.assets.precompile += %w( Pe-icon-7-stroke.eot )
+Rails.application.config.assets.precompile += %w( fontawesome-webfont.eot )
+Rails.application.config.assets.precompile += %w( fontawesome-webfont.woff )
+Rails.application.config.assets.precompile += %w( fontawesome-webfont.ttf )
+Rails.application.config.assets.precompile += %w( Pe-icon-7-stroke.woff )
+Rails.application.config.assets.precompile += %w( Pe-icon-7-stroke.ttf )
+Rails.application.config.assets.precompile += %w( Pe-icon-7-stroke.svg )
